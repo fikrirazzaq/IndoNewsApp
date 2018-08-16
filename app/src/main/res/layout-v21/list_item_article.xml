@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/rl_article_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/tv_article_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:paddingLeft="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="16dp"
+                android:text="Kereta LRT Ujicoba Kemarin Siang"
+                android:textAppearance="@android:style/TextAppearance.Material.Body2" />
+
+            <TextView
+                android:id="@+id/tv_article_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingStart="16dp"
+                android:text="5 Menit yang lalu"
+                android:textAppearance="@android:style/TextAppearance.Material.Caption" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgv_article_image"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:src="@mipmap/ic_launcher" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
